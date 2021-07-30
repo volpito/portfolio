@@ -1,0 +1,7 @@
+.btnDark{
+  border-radius: 15px;
+  background-color: rgb(151, 182, 204);
+  position: fixed;
+  left: 36px;
+  top: 19px;
+}

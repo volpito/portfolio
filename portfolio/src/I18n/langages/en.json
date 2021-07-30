@@ -1,0 +1,12 @@
+{
+  "header1": "Hello world !",
+  "header2": "(Yes, i know how to center a div)",
+  "titre": "Welcome to my website",
+  "home1" : "If you came all the way here, I guess it's my right to assume that you know what I do",
+  "home2" : "If so, I don't have to tell you that i'm a web developer since 2021, nore that I specialised in using ReactJS and Ruby on Rails. You should also know that I worked with Wordpress, Bootstrap, and other web tools. Obviously, I'm fluent in HTML and CSS",
+  "home3" : "No need for me to tell you all about it.",
+  "home4" : "On the contrary, I will let you scroll through this portfolio, a playground of sorts that I will never cese to improve, both because I like it, and also because it gives you a good look on what I'm capable of doing with a keyboard.",
+  "home5" : "All this was made using ReactJS.",
+  "home6" : "I hope you enjoy the tour !",
+  "home7" : "Email-me here"
+}
