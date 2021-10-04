@@ -1,12 +1,24 @@
 {
   "header1": "Bonjour le monde !",
   "header2": "(Oui, je sais centrer une div)",
-  "titre": "Bienvenue sur mon site",
+  "titleHome": "Bienvenue sur",
+  "titleHome1": "mon site",
   "home1" : "Si vous êtes arrivé jusqu'ici, c'est que vous avez déjà parcouru mon Linkedin, survolé mon profil sur Malt, cherché mon nom sur Google ou, plus simplement, que je vous ai donné ma carte.",
   "home2" : "Inutile donc de vous préciser que je suis développeur web depuis 2021, essentiellement sur ReactJS et Ruby on Rails. Vous n'ignorez pas non plus que maîtrise les outils tels que Wordpress, Bootstap et autres. Et au cas où ce ne serait pas déjà évident : HTML et CSS n'ont pas de secrets pour moi. ",
   "home3" : "Mais vous le saviez déjà, je n'en parlerai donc pas.",
   "home4" : "Au contraire, je vais vous laisser explorer mon Portfolio, qui est, aujourd'hui encore, un terrain de jeu qui me permet d'exprimer ma créativité et de vous montrer un échantillon de mes compétences.",
   "home5" : "L'ensemble a été fait avec ReactJS.",
   "home6" : "Bonne visite !",
-  "home7" : "Contactez-moi"
+  "home7" : "Contactez-moi",
+  "form1" : "Contactez-moi",
+  "form2" : "Rentrez vos informations dans ce formulaire, et je tâcherai de vous répondre dans les plus brefs délais.",
+  "formAdress1" : "7 place des Terreaux",
+  "formAdress2" : "69001 Lyon",
+  "formTel": "06.78.62.42.07",
+  "formMail" : "mpj.rigot@gmail.com",
+  "formName": "Nom complet", 
+  "formEmail": "Email", 
+  "formPhoneNum": "Numéro de téléphone", 
+  "formMsg": "Votre message", 
+  "formSubmit": "Envoyer"
 }

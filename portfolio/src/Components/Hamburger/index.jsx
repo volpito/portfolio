@@ -1,22 +1,23 @@
 import React from 'react';
 import { stack as Menu } from 'react-burger-menu';
-import linkedin from '../../Assets/Images/linkedin_logo.png'
-import github from '../../Assets/Images/github_logo.png'
-import gmail from '../../Assets/Images/gmail_logo.png'
 import { Icon } from 'react-icons-kit'
 import {person} from 'react-icons-kit/iconic/person'
 import './style.css';
 import BtnLang from '../BtnLang/index';
+import { Link } from 'react-router-dom';
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithubSquare } from 'react-icons/fa'
+import { MdMail } from 'react-icons/md'
 
 const Hamburger=()=> {
   return (
     
     <div className="burger">
-      <Menu right noOverlay width={ 100 } customBurgerIcon={ <Icon icon={person} size={35} style={{ color: '#F4A261' }} alt="person logo"/> }>
+      <Menu right noOverlay width={ 100 } customBurgerIcon={ <Icon icon={person} size={25} style={{ color: '#F4A261' }} alt="person logo"/> }>
         <div className="whitespaceBurger"></div>
-        <a href="https://www.linkedin.com/in/maxime-rigot-53259169/" > <img className="linkedin" alt="linkedin logo" src={linkedin} /> </a>
-        <a href="https://github.com/volpito" > <img className="github" alt="github logo" src={github} /> </a>
-        <a href="mailto:mpj.rigot@gmail.com?subject=Enchanté" > <img className="gmail" alt="gmail logo" src={gmail} /> </a>
+        <a href="https://www.linkedin.com/in/maxime-rigot-53259169/" > <FaLinkedin className="-ml-5 hover:shadow-2xl" alt="linkedin logo" /> </a>
+        <a href="https://github.com/volpito" > <FaGithubSquare className="-ml-5 hover:shadow-2xl" alt="github logo"/> </a>
+        <Link to="/contact"><MdMail className="-ml-5 hover:shadow-2xl" alt="gmail logo"/></Link>
         <div className="bugerWhitespace"></div>
         < BtnLang />
       </ Menu>

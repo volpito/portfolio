@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DarkTheme from './Components/DarkTheme';
-import Hamburger from './Components/Hamburger/index';
-import HeroBannerProfile from './Components/HeroBannerProfile';
 import './style.css';
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import languageReducer from './Store/languageReducer';
-import { useSelector } from 'react-redux'
-import {translation} from "./I18n/i18n";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from './Pages/Home/index';
+import Contact from './Pages/Contact/index';
+import Hamburger from './Components/Hamburger/index';
+import DarkTheme from './Components/DarkTheme/index';
+import { IconContext } from "react-icons";
+
+
 
 const store = createStore(
   combineReducers({
@@ -18,21 +25,30 @@ const store = createStore(
   
 const AppWrapper = () => {
   return (
+    <IconContext.Provider value={{ color: "#0C1821", size: '3em', className: "global-Icon" }}>
       <Provider store={store}>
           <App/>
       </Provider>
+    </IconContext.Provider>
+
     )
   }
 
 const App = () => {
-  const lang = useSelector(state => state.languageReducer.language)
   return (
     <>
+      <Router>
       < Hamburger />
       < DarkTheme />
-      <h1 className="topCenter">{translation(lang, 'header1')}</h1>
-      <p className="topCenter">{translation(lang, 'header2')}</p>
-      < HeroBannerProfile />
+      <Switch>
+        <Route path="/contact">
+          <Contact/>
+        </Route>
+        <Route path="/">
+          <Home/>
+        </Route>
+      </Switch>
+      </Router>
     </>
   )
 }

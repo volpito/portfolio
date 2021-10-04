@@ -1,7 +1,14 @@
 .btnDark{
   border-radius: 15px;
-  background-color: rgb(151, 182, 204);
-  position: fixed;
+  background-color: #60A5FA;
+  position: absolute;
   left: 36px;
   top: 19px;
+}
+
+@media screen and (max-width: 1057px) {
+  .btnDark {
+    left: 18px;
+    top: 15px;
+  }
 }

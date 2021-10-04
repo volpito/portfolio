@@ -1,5 +1,5 @@
 const initialState = {
-  language: 'fr'
+  language: 'en'
 }
 
 function languageReducer (state = initialState, action) {

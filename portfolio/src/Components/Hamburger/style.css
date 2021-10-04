@@ -1,10 +1,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   right: 36px;
-  top: 15px;
+  top: 20px;
 }
 
 /* Color/shape of burger icon bars */
@@ -45,7 +45,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   margin-top: -25px;
-  background: rgb(151, 182, 204);
+  background: #60A5FA;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -84,21 +84,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom: 50px;
 }
 
-.linkedin{
-  width: 300%;
-  margin-left: -15px;
-}
-
-.github{
-  width: 300%;
-  margin-left: -15px;
-}
-
-.gmail{
-  width: 300%;
-  margin-left: -15px;
-}
-
 .linkedin:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
 }
@@ -113,4 +98,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bugerWhitespace{
   height: 30%;
+}
+
+@media screen and (max-width: 1057px) {
+  .bm-burger-button {
+    position: absolute;
+    width: 18px;
+    right: 36px;
+    top: 15px;
+  }
 }

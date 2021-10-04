@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 export const lightTheme = {
-  body: '#FFFBE4',
+  body: '#F9FAFB',
   text: '#0C1821'
 };
 export const darkTheme = {

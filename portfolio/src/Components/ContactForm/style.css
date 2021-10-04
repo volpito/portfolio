@@ -1,0 +1,133 @@
+.formcontainer {
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background: #f3f6fa;
+   
+}
+
+.logoLogin{
+    width: 160px;
+    height: 30px;
+}
+
+.LoginContainer{
+    margin-top: 150px;
+    margin-bottom:13%;
+}
+
+.padding-horizontal--48 {
+    padding: 35px;
+  }
+
+.padding-bottom--15 {
+    padding-bottom: 15px;
+  }
+
+.titleform{
+    font-size: 35px;
+
+}
+
+ input:focus{
+     background-color: #ffffff;
+    outline: none;
+}
+
+
+  .field .champform {
+    margin-top: 40px;
+    font-size: 14px;
+    padding: 4px;
+    width: 80%;
+    min-height: 30px;
+    border: unset;
+    background: #ffffff;
+}
+
+.boutonform {
+    background-color: #3C64B1;
+    border: none;
+    color: white;
+    padding: 8px 35px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+
+    .endform{
+        margin-top: 20px;
+    }
+
+    .endquestforms{
+        color:#000000;
+    }
+
+    .end__link{
+        color:#3C64B1;
+        text-decoration:none; 
+    }
+
+.footerLogin {
+  height: 5%;
+  width: 100%;
+  background-color: #3C64B1;
+  color: #ffff;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  padding-bottom: 5px;
+}
+
+    @media all and (max-width:220px){
+        .boutonform {
+         
+            background-color: #3C64B1;
+            padding: 4px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 40px;
+            font-size: 14px;
+            min-height: 25px;
+            }
+            
+
+    }
+
+@media screen and (max-width: 400px) {
+  .LoginContainer{
+    margin-top: 150px;
+    margin-bottom:57%;
+}
+  
+}
+
+@media screen and (max-width: 380px) {
+  .LoginContainer{
+    margin-top: 150px;
+    margin-bottom:18%;
+}
+  
+}
+
+@media screen and (max-width: 768px) {
+  .LoginContainer{
+    margin-top: 150px;
+    margin-bottom:55%;
+}
+  
+}
+
+@media screen and (max-width: 1025px) {
+  .LoginContainer{
+    margin-top: 150px;
+    margin-bottom:75%;
+}
+  
+}
+   

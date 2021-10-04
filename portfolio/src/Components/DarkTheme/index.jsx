@@ -27,10 +27,10 @@ const DarkTheme = () => {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <>
         <GlobalStyles />
-        <button className="btnDark" onClick={toggleTheme}>
+        <button className="btnDark pl-1 pr-0.25 py-0.5" onClick={toggleTheme}>
           {isDarkTheme ?
-            <span aria-label="Light mode" role="img">🌞</span> :
-            <span aria-label="Dark mode" role="img">🌜</span>}
+            <span aria-label="Light mode" role="img"> 🌞</span> :
+            <span aria-label="Dark mode" role="img"> 🌜</span>}
         </button>
       </>
     </ThemeProvider>
