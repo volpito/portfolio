@@ -5,7 +5,9 @@
     max-width: 500px;
     border-radius: 10px;
     background: #f3f6fa;
-   
+}
+.bg-bg{
+  background: #0C1821;
 }
 
 .logoLogin{

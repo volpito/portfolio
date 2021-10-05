@@ -25,7 +25,7 @@ const store = createStore(
   
 const AppWrapper = () => {
   return (
-    <IconContext.Provider value={{ color: "#0C1821", size: '3em', className: "global-Icon" }}>
+    <IconContext.Provider value={{ color: "#0C1821", size: '3em', className: "global-Icon rounded-lg hover:shadow-2xl" }}>
       <Provider store={store}>
           <App/>
       </Provider>

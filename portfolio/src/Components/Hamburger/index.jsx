@@ -6,7 +6,7 @@ import './style.css';
 import BtnLang from '../BtnLang/index';
 import { Link } from 'react-router-dom';
 import { FaLinkedin } from 'react-icons/fa'
-import { FaGithubSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaHome } from 'react-icons/fa'
 import { MdMail } from 'react-icons/md'
 
 const Hamburger=()=> {
@@ -20,6 +20,7 @@ const Hamburger=()=> {
         <Link to="/contact"><MdMail className="-ml-5 hover:shadow-2xl" alt="gmail logo"/></Link>
         <div className="bugerWhitespace"></div>
         < BtnLang />
+        <Link to="/" className="absolute text-gray-500 -mt-4"><FaHome className="w-1/3"/></Link>
       </ Menu>
     </div>
     

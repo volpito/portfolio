@@ -3,6 +3,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import {translation} from "../../I18n/i18n";
 import './style.css';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
   const lang = useSelector(state => state.languageReducer.language)
@@ -47,8 +48,9 @@ const ContactForm = () => {
               </div>
             </dl>
           </div>
+          <Link to="/" className="sm:block hidden absolute text-gray-500 mt-64 hover:text-yellow-400">Home</Link>
         </div>
-        <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+        <div className="bg-bg py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
               <div>
@@ -118,6 +120,5 @@ const ContactForm = () => {
     </div>
     </>
   );
-
 }
 export default ContactForm;

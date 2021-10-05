@@ -10,7 +10,7 @@ const Home = () => {
     <>
     <h1 className="topCenter">{translation(lang, 'header1')}</h1>
     <hr className="mx-auto mb-2"/>
-    <p className="topCenter">{translation(lang, 'header2')}</p>
+    <p className="topCenter text-gray-500">{translation(lang, 'header2')}</p>
     < HeroHome />
     </>
   )
