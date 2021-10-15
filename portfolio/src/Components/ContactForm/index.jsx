@@ -55,53 +55,50 @@ const ContactForm = () => {
             <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
               <div>
                 <label htmlFor="full-name" className="sr-only">
-                {translation(lang, 'formName')}
+                
                 </label>
                 <input
-                  type="text"
+                  type="string"
                   name="full-name"
                   id="full-name"
-                  autoComplete="name"
+                  autoComplete={translation(lang, 'formName')}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                  placeholder="Full name"
+                  placeholder={translation(lang, 'formName')}
                 />
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">
-                {translation(lang, 'formEmail')}
                 </label>
                 <input
                   id="email"
                   name="email"
-                  type="email"
-                  autoComplete="email"
+                  type="string"
+                  autoComplete={translation(lang, 'formEmail')}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                  placeholder="Email"
+                  placeholder={translation(lang, 'formEmail')}
                 />
               </div>
               <div>
                 <label htmlFor="phone" className="sr-only">
-                {translation(lang, 'formPhoneNum')}
                 </label>
                 <input
-                  type="text"
+                  type="string"
                   name="phone"
                   id="phone"
-                  autoComplete="tel"
+                  autoComplete={translation(lang, 'formPhoneNum')}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                  placeholder="Phone"
+                  placeholder={translation(lang, 'formPhoneNum')}
                 />
               </div>
               <div>
                 <label htmlFor="message" className="sr-only">
-                {translation(lang, 'formMsg')}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
-                  placeholder="Message"
+                  placeholder={translation(lang, 'formMsg')}
                   defaultValue={''}
                 />
               </div>

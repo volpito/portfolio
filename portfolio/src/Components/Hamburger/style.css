@@ -97,7 +97,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .bugerWhitespace{
-  height: 30%;
+  height: 25%;
 }
 
 @media screen and (max-width: 1057px) {
