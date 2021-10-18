@@ -13,7 +13,7 @@ const Home = () => {
     <hr className="mx-auto mb-2"/>
     <p className="topCenter text-gray-500">{translation(lang, 'header2')}</p>
     < HeroHome />
-    <SectionAPI/>
+    < SectionAPI/>
     </>
   )
 }

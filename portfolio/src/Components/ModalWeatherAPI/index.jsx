@@ -10,7 +10,6 @@ export default function ModalAPI(props) {
   const [open, setOpen] = useState(false)
   const lang = useSelector(state => state.languageReducer.language)
   const [resp, setResp] = useState()
-  const [city, setCity] = useState("")
 
   const handleSubmit =() => {
     setOpen(true)

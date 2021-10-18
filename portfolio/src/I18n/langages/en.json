@@ -28,6 +28,6 @@
   "ContentAPI": "APIs are a huge part of what we do, and knowing how to integrate them is crutial for a web-developer. Here are a few examples for you.",
   "sendCity":"Send to API",
   "sendCoord": "Send coordonates",
-  "modalError": "Something has occured. Please try again later :/",
+  "modalError": "Loading... :/",
   "inputWeatherCity": "Add a city Name"
 }

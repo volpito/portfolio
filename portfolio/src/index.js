@@ -14,6 +14,7 @@ import Contact from './Pages/Contact/index';
 import Hamburger from './Components/Hamburger/index';
 import DarkTheme from './Components/DarkTheme/index';
 import { IconContext } from "react-icons";
+import Footer from './Components/Footer';
 
 
 
@@ -28,6 +29,7 @@ const AppWrapper = () => {
     <IconContext.Provider value={{ color: "#0C1821", size: '3em', className: "global-Icon rounded-lg hover:shadow-2xl" }}>
       <Provider store={store}>
           <App/>
+          <Footer />
       </Provider>
     </IconContext.Provider>
 
