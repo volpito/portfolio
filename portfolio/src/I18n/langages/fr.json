@@ -27,5 +27,7 @@
   "TitleAPI": "Choisissez votre API !",
   "ContentAPI": "Les APIs font partie intégrante du quotidien des développeurs, c'est pourquoi j'ai tenu à en intégrer quelques unes, les classiques, à mon portfolio.",
   "sendCity":"Envoyer",
+  "sendCoord": "Envoyez vos coordonnées",
+  "modalError": "Une erreur s'est produite. Merci de réessayer plus tard :/",
   "inputWeatherCity": "Entrez un nom de ville"
 }

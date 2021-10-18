@@ -2,9 +2,29 @@ import ModalNasaAPI from "../ModalNasaAPI";
 import ModalWeatherAPI from "../ModalWeatherAPI";
 import { translation } from '../../I18n/i18n';
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 export default function SectionAPI() {
   const lang = useSelector(state => state.languageReducer.language)
+  const [position, setPosition] = useState("")
+  const [long, setLong] = useState("")
+  const [lat, setLat] = useState("")
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      setPosition("Geolocation is not supported by this browser.");
+    }
+  }
+
+  function showPosition(position) {
+    setLat(position.coords.latitude);
+    setLong(position.coords.longitude);
+    console.log(position)
+  }
+
+  getLocation();
 
   return (
     <div className="bg-blue-500">
@@ -19,7 +39,7 @@ export default function SectionAPI() {
         </p>
         <div className="flex">
           <ModalNasaAPI/>
-          <ModalWeatherAPI />
+          <ModalWeatherAPI long={long} lat={lat}/>
         </div>
       </div>
     </div>

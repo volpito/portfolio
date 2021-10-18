@@ -4,14 +4,17 @@ import { Dialog, Transition } from '@headlessui/react'
 import { useSelector } from 'react-redux';
 import { translation } from '../../I18n/i18n';
 
-export default function ModalAPI() {
+export default function ModalAPI(props) {
+  const {lat, long} = props
+
   const [open, setOpen] = useState(false)
   const lang = useSelector(state => state.languageReducer.language)
   const [resp, setResp] = useState()
   const [city, setCity] = useState("")
 
   const handleSubmit =() => {
-    const url = `https://api.weatherapi.com/v1/current.json?key=c91d3fdea9f3478989a92153211810&q=${city}&aqi=no`
+    setOpen(true)
+    const url = `https://api.weatherapi.com/v1/current.json?key=c91d3fdea9f3478989a92153211810&q=${lat},${long}&aqi=no&lang=${lang}`
 
     fetch(url, {
       method:'GET',
@@ -30,9 +33,7 @@ export default function ModalAPI() {
     <>
       <button 
         className="flex mt-12 mb-8 mx-auto justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
-        onClick={() => {
-          setOpen(true)
-        }}
+        onClick={handleSubmit}
       >
       {translation(lang, 'modalWeatherAPIbtn')}
       </button>
@@ -49,7 +50,7 @@ export default function ModalAPI() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+            <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
@@ -69,55 +70,35 @@ export default function ModalAPI() {
               className="inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6"
               style={{backgroundColor :"#0C1821"}}
               >
-                {!resp && (
-                  <>
-                  <div className={"flex flex-col sm:mb-16 "}>
-                      <label htmlFor={translation(lang, 'inputWeatherCity')} className="mb-1">
-                        {translation(lang, 'inputWeatherCity')}
-                      </label>
-                    <input
-                      type="text"
-                      name={translation(lang, 'inputWeatherCity')}
-                      className="block text-gray-500 px-3 py-2 border-2 border-gray-200 rounded-md disabled:text-gray-400 disabled:bg-gray-100"
-                      onChange={(evt) => {setCity(evt.target.value)}}
-                    />
+              {!resp && (
+                <>
+                <p>{translation(lang, 'modalError')}</p>
+                </>
+              )}
+              {resp &&(
+                <div className="sm:flex-col sm:items-start sm:mb-16">
+                  <div className="mx-auto flex items-center justify-center sm:mx-0 ">
+                    <img src={`${resp &&(resp.current.condition.icon)}`} alt={`${resp.current.condition.text}`}/>
                   </div>
-                  <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
-                    <button
-                      type="button"
-                      className="mt-3 w-full sm:absolute sm:right-6 sm:bottom-8 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:mt-0 sm:w-auto sm:text-sm"
-                      onClick={handleSubmit}
-                    >
-                      {translation(lang, 'sendCity')}
-                    </button>
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <div className="mt-2">
+                    <p className="text-lg text-center font-bold text-gray-500">
+                      {resp &&(resp.location.name)}
+                    </p>
+                    <div className="grid grid-cols-2">
+                    <p className="text-sm text-gray-500 text-left">
+                      {resp &&(resp.current.condition.text)}
+                    </p>
+                    <p className="text-sm text-gray-500 text-right">
+                      {resp &&(resp.location.localtime)}
+                    </p>
+                    </div>
+                    <p className="text-sm text-gray-500 text-left">
+                      {resp &&(resp.current.temp_c)}°C
+                    </p>
+                    </div>
                   </div>
-                  </>
-                )}
-
-                {resp &&(
-                  <div className="sm:flex-col sm:items-start sm:mb-16">
-                    <div className="mx-auto flex items-center justify-center sm:mx-0 ">
-                      <img src={`${resp.current.condition.icon}`} alt={`${resp.current.condition.text}`}/>
-                    </div>
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <div className="mt-2">
-                      <p className="text-lg text-center font-bold text-gray-500">
-                        {resp.location.name}
-                      </p>
-                      <div className="grid grid-cols-2">
-                      <p className="text-sm text-gray-500 text-left">
-                        {resp.current.condition.text}
-                      </p>
-                      <p className="text-sm text-gray-500 text-right">
-                        {resp.location.localtime}
-                      </p>
-                      </div>
-                      <p className="text-sm text-gray-500 text-left">
-                        {resp.current.temp_c}°C
-                      </p>
-                      </div>
-                    </div>
-                  </div>)}
+                </div>)}
                 <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
                   <button
                     type="button"

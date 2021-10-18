@@ -23,6 +23,7 @@ export default function ModalAPI() {
     .catch(function (error) {
       console.log({ error });
     });
+
   }
   return (
     <>
@@ -67,6 +68,13 @@ export default function ModalAPI() {
               className="inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6"
               style={{backgroundColor :"#0C1821"}}
               >
+              {!resp && (
+                <>
+                <p>{translation(lang, 'modalError')}</p>
+                </>
+              )}
+              {resp && (
+                <>
                 <div className="sm:flex-col sm:items-start">
                   <div className="mx-auto flex items-center justify-center sm:mx-0 ">
                     <img src={`${resp && (resp.url)}`} alt={`${resp && (resp.title)}`}/>
@@ -91,6 +99,8 @@ export default function ModalAPI() {
                     {translation(lang, 'modalCloseBtn')}
                   </button>
                 </div>
+                </>
+              )}
               </div>
             </Transition.Child>
           </div>
