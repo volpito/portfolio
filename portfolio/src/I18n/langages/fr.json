@@ -20,5 +20,12 @@
   "formEmail": "Email", 
   "formPhoneNum": "Numéro de téléphone", 
   "formMsg": "Votre message", 
-  "formSubmit": "Envoyer"
+  "formSubmit": "Envoyer",
+  "modalWeatherAPIbtn": "Consulter la météo",
+  "modalNasaAPIbtn": "Photo du jour",
+  "modalCloseBtn": "Fermer",
+  "TitleAPI": "Choisissez votre API !",
+  "ContentAPI": "Les APIs font partie intégrante du quotidien des développeurs, c'est pourquoi j'ai tenu à en intégrer quelques unes, les classiques, à mon portfolio.",
+  "sendCity":"Envoyer",
+  "inputWeatherCity": "Entrez un nom de ville"
 }

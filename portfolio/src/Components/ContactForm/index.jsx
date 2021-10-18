@@ -4,9 +4,36 @@ import {translation} from "../../I18n/i18n";
 import './style.css';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const ContactForm = () => {
+  const [content, setContent] = useState("")
+  const [phone, setPhone] = useState("")
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
   const lang = useSelector(state => state.languageReducer.language)
+  
+  const url = 'http://localhost:8000/messages'
+
+  const handleSubmit =() => {
+    fetch(url, {
+      method:'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        full_name: name,
+        phone: phone,
+        email: email,
+        content: content,
+      }),
+    })
+    .then((response) => response.json())
+    .catch(function (error) {
+      console.log({ error });
+    });
+  }
+
   return (
     <>
       <div>
@@ -52,18 +79,19 @@ const ContactForm = () => {
         </div>
         <div className="bg-bg py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form className="grid grid-cols-1 gap-y-6">
               <div>
                 <label htmlFor="full-name" className="sr-only">
-                
                 </label>
                 <input
                   type="string"
                   name="full-name"
                   id="full-name"
                   autoComplete={translation(lang, 'formName')}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder={translation(lang, 'formName')}
+                  onChange={(evt) => setName(evt.target.value)}
+                  value={name}
                 />
               </div>
               <div>
@@ -74,8 +102,10 @@ const ContactForm = () => {
                   name="email"
                   type="string"
                   autoComplete={translation(lang, 'formEmail')}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder={translation(lang, 'formEmail')}
+                  onChange={(evt) => setEmail(evt.target.value)}
+                  value={email}
                 />
               </div>
               <div>
@@ -86,8 +116,10 @@ const ContactForm = () => {
                   name="phone"
                   id="phone"
                   autoComplete={translation(lang, 'formPhoneNum')}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder={translation(lang, 'formPhoneNum')}
+                  onChange={(evt) => setPhone(evt.target.value)}
+                  value={phone}
                 />
               </div>
               <div>
@@ -97,14 +129,16 @@ const ContactForm = () => {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                   placeholder={translation(lang, 'formMsg')}
-                  defaultValue={''}
+                  onChange={(evt) => setContent(evt.target.value)}
+                  value={content}
                 />
               </div>
               <div>
                 <button
                   type="submit"
+                  onClick={handleSubmit}
                   className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 >
                   {translation(lang, 'formSubmit')}

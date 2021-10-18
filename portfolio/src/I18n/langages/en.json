@@ -20,5 +20,12 @@
   "formEmail": "Email", 
   "formPhoneNum": "Phone Number", 
   "formMsg": "Message", 
-  "formSubmit": "Submit"
+  "formSubmit": "Submit",
+  "modalWeatherAPIbtn": "Get the weather",
+  "modalNasaAPIbtn": "Picture of the day",
+  "modalCloseBtn": "Close",
+  "TitleAPI": "Here, have some APIs !",
+  "ContentAPI": "APIs are a huge part of what we do, and knowing how to integrate them is crutial for a web-developer. Here are a few examples for you.",
+  "sendCity":"Send to API",
+  "inputWeatherCity": "Add a city Name"
 }
