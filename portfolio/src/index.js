@@ -16,8 +16,6 @@ import DarkTheme from './Components/DarkTheme/index';
 import { IconContext } from "react-icons";
 import Footer from './Components/Footer';
 
-
-
 const store = createStore(
   combineReducers({
   languageReducer,

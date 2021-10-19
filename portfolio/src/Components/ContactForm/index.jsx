@@ -3,7 +3,6 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import {translation} from "../../I18n/i18n";
 import './style.css';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -40,7 +39,7 @@ const ContactForm = () => {
         <div className="containerNavbar mb-20">
         </div>
       </div>
-      <div className="relative bg-white">
+      <div className="relative">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
@@ -75,7 +74,6 @@ const ContactForm = () => {
               </div>
             </dl>
           </div>
-          <Link to="/" className="sm:block hidden absolute text-gray-500 mt-64 hover:text-yellow-400">Home</Link>
         </div>
         <div className="bg-bg py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
