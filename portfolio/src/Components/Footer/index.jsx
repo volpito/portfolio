@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaHome } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const navigation = [
   {
@@ -18,16 +19,16 @@ const navigation = [
   },
   {
     name: 'Mail',
-    href: '/contact',
+    href: '#',
     icon: () => (
-      <MdMail className="w-5/12 -mt-3" style={{color: "gray"}}/>
+      <Link to="/contact"><MdMail className="w-5/12 -mt-3" style={{color: "gray"}}/></Link>
     ),
   },
   {
     name: 'Home',
-    href: '/',
+    href: '#',
     icon: () => (
-      <FaHome className="w-5/12 -mt-3" style={{color: "gray"}}/>
+      <Link to="/"><FaHome className="w-5/12 -mt-3" style={{color: "gray"}}/></Link>
     ),
   },
 ]
