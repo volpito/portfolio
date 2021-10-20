@@ -9,7 +9,7 @@ export default function ModalAPI() {
   const [resp, setResp] = useState()
 
   const handleSubmit =() => {
-    const url = 'https://api.nasa.gov/planetary/apod?api_key=fshNHel5xOodNGKfb6CDzOfPr8LgCenh88LmA3UI'
+    const url = 'https://mpj-portfolio.herokuapp.com/messages'
 
     fetch(url, {
       method:'GET',
@@ -73,18 +73,17 @@ export default function ModalAPI() {
                 </>
               )}
               {resp && (
+              resp.map((msg) => {
+                return(
                 <>
                 <div className="sm:flex-col sm:items-start">
-                  <div className="mx-auto flex items-center justify-center sm:mx-0 ">
-                    <img src={`${resp && (resp.url)}`} alt={`${resp && (resp.title)}`}/>
-                  </div>
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      {resp && (resp.title)}
+                      {resp && (msg.full_name)}
                     </p>
                     <p className="text-sm text-gray-500">
-                      {resp && (resp.date)}
+                      {resp && (msg.email)}
                     </p>
                     </div>
                   </div>
@@ -99,7 +98,8 @@ export default function ModalAPI() {
                   </button>
                 </div>
                 </>
-              )}
+
+              )}))}
               </div>
             </Transition.Child>
           </div>

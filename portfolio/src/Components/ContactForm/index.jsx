@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("")
   const lang = useSelector(state => state.languageReducer.language)
   
-  const url = 'http://localhost:8000/messages'
+  const url = 'https://mpj-portfolio.herokuapp.com/messages'
 
   const handleSubmit =() => {
     fetch(url, {
