@@ -4,6 +4,7 @@ import {translation} from "../../I18n/i18n";
 import './style.css';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
+import ModalError from '../ModalError';
 
 const ContactForm = () => {
   const [content, setContent] = useState("")
@@ -134,6 +135,12 @@ const ContactForm = () => {
                 />
               </div>
               <div>
+                <ModalError 
+                modalBtn={"formSubmit"}
+                modalContent1={"errorModal1"}
+                className={"text-center"}
+                />
+                {/*
                 <button
                   type="submit"
                   onClick={handleSubmit}
@@ -141,6 +148,7 @@ const ContactForm = () => {
                 >
                   {translation(lang, 'formSubmit')}
                 </button>
+                */}
               </div>
             </form>
           </div>

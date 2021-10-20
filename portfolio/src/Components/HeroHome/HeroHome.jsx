@@ -84,7 +84,7 @@ export default function HeroHome() {
                   className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
                 >
                   <img
-                    className="w-full"
+                    className="w-12/12"
                     src={ImageMe}
                     alt=""
                   />
@@ -93,8 +93,8 @@ export default function HeroHome() {
             </div>
           </div>
         </main>
-        <div className="button__herobanner">
-        <Link to="/contact"><button className="flex mt-12 mb-8 mx-auto justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">{translation(lang, 'home7')}</button></Link>
+        <div className="button__herobanner my-10">
+        <Link to="/contact"><button className="flex mt-20 mb-8 mx-auto justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:block hidden">{translation(lang, 'home7')}</button></Link>
         </div>
       </div>
   )

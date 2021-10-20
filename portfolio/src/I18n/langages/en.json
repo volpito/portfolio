@@ -29,5 +29,6 @@
   "sendCity":"Send to API",
   "sendCoord": "Send coordonates",
   "modalError": "Loading... :/",
+  "errorModal1": "Work in progress...",
   "inputWeatherCity": "Add a city Name"
 }

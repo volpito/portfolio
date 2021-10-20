@@ -29,5 +29,6 @@
   "sendCity":"Envoyer",
   "sendCoord": "Envoyez vos coordonnées",
   "modalError": "Chargement... :/",
+  "errorModal1": "En cours de développement...",
   "inputWeatherCity": "Entrez un nom de ville"
 }
