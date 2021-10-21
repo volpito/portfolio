@@ -23,8 +23,9 @@ export default function ModalAPI(props) {
     })
     .then((response) => response.json())
     .then((data) => setResp(data))
-    .catch(function (error) {
+    .catch((error) => {
       console.log({ error });
+      console.log("error ModalWeatherAPI");
     });
 
   }

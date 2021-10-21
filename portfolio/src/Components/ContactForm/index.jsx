@@ -29,8 +29,9 @@ const ContactForm = () => {
       }),
     })
     .then((response) => response.json())
-    .catch(function (error) {
+    .catch((error) => {
       console.log({ error });
+      console.log("error contactForm");
     });
   }
 

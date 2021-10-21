@@ -19,8 +19,9 @@ export default function ModalAPI() {
     })
     .then((response) => response.json())
     .then((data) => setResp(data))
-    .catch(function (error) {
+    .catch((error) => {
       console.log({ error });
+      console.log("error Private");
     });
 
   }
