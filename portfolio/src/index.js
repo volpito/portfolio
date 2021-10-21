@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../public/favicon.ico';
 
 import './style.css';
 import { createStore, combineReducers } from 'redux'
