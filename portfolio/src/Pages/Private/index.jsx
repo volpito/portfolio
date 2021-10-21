@@ -9,7 +9,7 @@ export default function ModalAPI() {
   const [resp, setResp] = useState()
 
   const handleSubmit =() => {
-    const url = 'https://mpj-portfolio.herokuapp.com/messages'
+    const url = 'http://localhost:8000/messages'
 
     fetch(url, {
       method:'GET',
