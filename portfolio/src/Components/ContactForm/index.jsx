@@ -13,7 +13,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("")
   const lang = useSelector(state => state.languageReducer.language)
   
-  const url = 'https://mpj-portfolio.herokuapp.com/messages'
+  const url = 'http://localhost:8000/messages'
 
   const handleSubmit =() => {
     fetch(url, {
@@ -135,12 +135,15 @@ const ContactForm = () => {
                 />
               </div>
               <div>
+                                {/*
+
                 <ModalError 
                 modalBtn={"formSubmit"}
                 modalContent1={"errorModal1"}
                 className={"text-center"}
                 />
-                {/*
+                                */}
+
                 <button
                   type="submit"
                   onClick={handleSubmit}
@@ -148,7 +151,6 @@ const ContactForm = () => {
                 >
                   {translation(lang, 'formSubmit')}
                 </button>
-                */}
               </div>
             </form>
           </div>
