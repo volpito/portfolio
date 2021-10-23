@@ -4,7 +4,6 @@ import {translation} from "../../I18n/i18n";
 import './style.css';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
-import ModalError from '../ModalError';
 
 const ContactForm = () => {
   const [content, setContent] = useState("")

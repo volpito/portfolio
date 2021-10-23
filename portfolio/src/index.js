@@ -12,11 +12,11 @@ import {
 } from 'react-router-dom';
 import Home from './Pages/Home/index';
 import Contact from './Pages/Contact/index';
-import Private from './Pages/Private/index';
 import Hamburger from './Components/Hamburger/index';
 import DarkTheme from './Components/DarkTheme/index';
 import { IconContext } from "react-icons";
 import Footer from './Components/Footer';
+import Resume from './Pages/Resume/index';
 
 const store = createStore(
   combineReducers({
@@ -45,8 +45,8 @@ const App = () => {
         <Route path="/contact">
           <Contact/>
         </Route>
-        <Route path="/private">
-          <Private />
+        <Route path="/resume">
+          <Resume />
         </Route>
         <Route path="/">
           <Home/>

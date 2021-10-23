@@ -7,7 +7,7 @@
   "home2" : "If so, I don't have to tell you that I have been a web developer since 2021, nore that I specialised in using ReactJS and Ruby on Rails. You may also know that I worked with Wordpress, Bootstrap, and other web tools. Obviously, I'm fluent in both HTML and CSS.",
   "home3" : "No need for me to tell you all about it.",
   "home4" : "On the contrary, I will let you scroll through this portfolio, a playground of sorts that I will never cese to improve, both because I like it, and also because it gives you a good look on what I'm capable of doing with a keyboard.",
-  "home5" : "All this was made using ReactJS and Rails, with some help from TailWind CSS.",
+  "home5" : "Front was made using ReactJS, with some help from TailWind CSS, and the back was build with Ruby on Rails.",
   "home6" : "I hope you enjoy the tour !",
   "home7" : "Email-me here",
   "form1" : "Get in touch",
@@ -30,5 +30,9 @@
   "sendCoord": "Send coordonates",
   "modalError": "Loading... :/",
   "errorModal1": "Work in progress...",
+  "CvTitle": "Resume",
+  "CvTitleBig": "My (french) resume",
+  "CvTitleSmall": "Here's all the information you might be asking about my professional experience. For more info...",
+  "CvTitleError": "Resume is not available on mobile. Please send an email or try again from your laptop.",
   "inputWeatherCity": "Add a city Name"
 }

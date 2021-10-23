@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaHome } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
+import { HiDocumentText } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
 const navigation = [
@@ -22,6 +23,13 @@ const navigation = [
     href: '#',
     icon: () => (
       <Link to="/contact"><MdMail className="w-5/12 -mt-3" style={{color: "gray"}}/></Link>
+    ),
+  },
+  {
+    name: 'Resume',
+    href: '#',
+    icon: () => (
+      <Link to="/resume"><HiDocumentText className="w-5/12 -mt-3" style={{color: "gray"}}/></Link>
     ),
   },
   {

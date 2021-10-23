@@ -7,7 +7,7 @@
   "home2" : "Inutile donc de vous préciser que je suis développeur web depuis 2021, essentiellement sur ReactJS et Ruby on Rails. Vous n'ignorez pas non plus que maîtrise les outils tels que Wordpress, Bootstap et autres. Et au cas où ce ne serait pas déjà évident : HTML et CSS n'ont pas de secrets pour moi. ",
   "home3" : "Mais vous le saviez déjà, je n'en parlerai donc pas.",
   "home4" : "Au contraire, je vais vous laisser explorer mon Portfolio, qui est, aujourd'hui encore, un terrain de jeu qui me permet d'exprimer ma créativité et de vous montrer un échantillon de mes compétences.",
-  "home5" : "L'ensemble a été fait avec ReactJS.",
+  "home5" : "Le front a été réalisé avec ReactJS, avec l'aide de Tailwind CSS, et le back avec Ruby on Rails.",
   "home6" : "Bonne visite !",
   "home7" : "Contactez-moi",
   "form1" : "Contactez-moi",
@@ -30,5 +30,9 @@
   "sendCoord": "Envoyez vos coordonnées",
   "modalError": "Chargement... :/",
   "errorModal1": "En cours de développement...",
+  "CvTitle": "Curriculum Vitae",
+  "CvTitleBig": "Mon CV, en bonne et due forme",
+  "CvTitleSmall": "Toutes les questions que vous pourriez avoir sur mon parcours. Pour plus d'informations...",
+  "CvTitleError": "Le document CV est indisponible sur mobile. Veuillez me contacter ou réessayer sur votre ordinateur.",
   "inputWeatherCity": "Entrez un nom de ville"
 }
