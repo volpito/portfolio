@@ -1,13 +1,10 @@
 import React from 'react'
-import CV from '../../Assets/Images/MaximeRIGOT.pdf'
-import {Document, Page, pdfjs } from 'react-pdf'
+import CV from '../../Assets/Images/CV.png'
 import {translation} from "../../I18n/i18n";
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import duck from '../../Assets/Images/duck-hat.gif'
 
 export default function Resume() {
-  pdfjs.GlobalWorkerOptions.workerSrc=`//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
   const lang = useSelector(state => state.languageReducer.language)
 
   return (
@@ -32,17 +29,7 @@ export default function Resume() {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:place-items-center">
             <p/>
-            <Document
-              file={CV}
-              onLoadError={console.error}
-              className="relative mt-12 -mb-12 sm:block hidden rounded-xl"
-            >
-              <Page pageIndex={0}/>
-            </Document>
-            <div className="relative text-gray-400 mt-12 sm:hidden block">
-              <p>{translation(lang, 'CvTitleError')}</p>
-              <img className="mt-5 rounded-2xl" src={duck} alt="cute duck with a hat gif" />
-            </div>
+            <img src={CV} alt="Maxime's resume" className="mt-12 rounded-2xl sm:mt-24 sm:w-8/12 shadow-xl"/>
             </div>
           </div>
         </div>
