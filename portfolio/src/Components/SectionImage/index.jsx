@@ -20,7 +20,7 @@ export default function SectionAPI() {
         {translation(lang, 'ContentIMG')}
       </p>
     </div>
-    <div className="bg-fixed h-96 bg-bottom" style={{backgroundImage: `url(${sky})`}}>
+    <div className="bg-fixed h-96 bg-bottom" style={{backgroundImage: `url(${sky2})`}}>
       <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 text-blue-400">
       </div>
     </div>
