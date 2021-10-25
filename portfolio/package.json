@@ -2,7 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "yarn": "1.x"
   },
   "private": true,
   "dependencies": {
