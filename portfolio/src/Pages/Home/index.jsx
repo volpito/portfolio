@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import {translation} from "../../I18n/i18n";
 import HeroHome from '../../Components/HeroHome/HeroHome';
 import SectionAPI from '../../Components/SectionAPI/index';
-import SectionImage from '../../Components/SectionImage/index';
 
 const Home = () => {
   const lang = useSelector(state => state.languageReducer.language)
@@ -15,7 +14,6 @@ const Home = () => {
     <p className="topCenter text-gray-500">{translation(lang, 'header2')}</p>
     < HeroHome />
     < SectionAPI/>
-    < SectionImage/>
     </>
   )
 }
