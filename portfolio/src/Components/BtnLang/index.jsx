@@ -5,9 +5,10 @@ function BtnLang () {
   const dispach = useDispatch()
   return (
     <div>
-    <div className="btnLang">
-      <button className="btnFr" onClick={(() => dispach({type: "fr"}))}>🇫🇷</button>
-      <button className="btnEn" onClick={(() => dispach({type: "en"}))}>🇬🇧</button>
+    <div className="btnLang text-2xl">
+      <button className="btnFr hover:shadow-2xl" onClick={(() => dispach({type: "fr"}))}>🇫🇷</button>
+      <br />
+      <button className="btnEn hover:shadow-2xl" onClick={(() => dispach({type: "en"}))}>🇬🇧</button>
     </div>
     </div>
   )

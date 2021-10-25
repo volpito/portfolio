@@ -43,13 +43,13 @@ const App = () => {
       < DarkTheme />
       <Switch>
         <Route path="/contact">
-          <Contact/>
+          <Contact />
         </Route>
         <Route path="/resume">
           <Resume />
         </Route>
         <Route path="/">
-          <Home/>
+          <Home />
         </Route>
       </Switch>
       <Footer />

@@ -42,7 +42,7 @@ export default function HeroHome() {
                   <span className="block text-blue-400 sm:ml-52 sm:mb-10">{translation(lang, 'titleHome1')}</span>
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 {translation(lang, 'home1')} <br/><br/>
                 {translation(lang, 'home2')} <br/><br/>
                 {translation(lang, 'home3')} <br/><br/>
