@@ -36,5 +36,7 @@
   "CvTitleError": "Resume is not available on mobile. Please send an email or try again from your laptop.",
   "TitleIMG": "Or maybe some nice image...",
   "ContentIMG": "Feel the soothing appeal of scrolling through this section",
+  "FomIntroTitle": "Do you have a project ?",
+  "FomIntroContent": "I may have just the solution for you, or we can at least talk about it",
   "inputWeatherCity": "Add a city Name"
 }
