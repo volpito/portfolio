@@ -17,8 +17,8 @@ const Home = () => {
     < HeroHome />
     < SectionAPI/>
     < SectionImage/>
-    <h1 className="topCenter">{translation(lang, 'FomIntroTitle')}</h1>
-    <p className="topCenter text-gray-500">{translation(lang, 'FomIntroContent')}</p>
+    <h1 className="topCenter text-3xl font-extrabold sm:text-4xl mb-8">{translation(lang, 'FomIntroTitle')}</h1>
+    <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'FomIntroContent')}</p>
     < ContactForm />
     </>
   )
