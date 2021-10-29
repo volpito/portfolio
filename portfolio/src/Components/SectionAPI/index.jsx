@@ -26,7 +26,7 @@ export default function SectionAPI() {
   getLocation();
 
   return (
-    <div className=" rounded-2xl -mb-3" style={{backgroundColor: "#60A5FA"}}>
+    <div className="rounded-t-2xl" style={{backgroundColor: "#60A5FA"}}>
       <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 text-white">
         <h2 className="text-3xl font-extrabold sm:text-4xl mb-8">
           <span className="block">      

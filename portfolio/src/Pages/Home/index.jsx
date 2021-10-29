@@ -23,7 +23,7 @@ const Home = () => {
     <h2 className="topCenter text-3xl font-extrabold sm:text-4xl mb-8 mt-12 text-blue-400">{translation(lang, 'FomIntroTitle')}</h2>
     <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'FomIntroContent')}</p>
     </div>
-    <div className="absolute w-full h-9 sm:hidden block bg-blue-400"><p></p></div>
+    <div className="absolute w-full h-9 sm:hidden block bg-blue-400 rounded-b-2xl"><p></p></div>
     < ContactForm />
     </>
   )
