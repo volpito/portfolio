@@ -37,17 +37,17 @@ const ContactForm = () => {
   return (
     <>
       <div>
-        <div className="containerNavbar mb-20">
+        <div className="containerNavbar mb-9 sm:mb-20">
         </div>
       </div>
       <div className="relative">
       <div className="absolute inset-0">
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-current!" />
       </div>
       <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
-        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div className="bg-current! py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
-            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">{translation(lang, 'form1')}</h2>
+            <h2 className="text-2xl font-extrabold tracking-tight text-blue-400 sm:text-3xl">{translation(lang, 'form1')}</h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
             {translation(lang, 'form2')}
             </p>
@@ -76,7 +76,7 @@ const ContactForm = () => {
             </dl>
           </div>
         </div>
-        <div className="bg-bg py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+        <div className="bg-blue-400 py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form className="grid grid-cols-1 gap-y-6">
               <div>
@@ -147,7 +147,7 @@ const ContactForm = () => {
                 <button
                   type="submit"
                   onClick={handleSubmit}
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-black bg-white hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 >
                   {translation(lang, 'formSubmit')}
                 </button>
