@@ -4,9 +4,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 const publicPath = path.join(__dirname, '..', 'build');
 
-var sslRedirect = require(`heroku-ssl-redirect`);
+//var sslRedirect = require(`heroku-ssl-redirect`);
 
-app.use('/public', express.static(publicPath));
+app.use(express.static(publicPath));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
