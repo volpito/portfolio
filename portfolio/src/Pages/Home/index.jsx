@@ -22,9 +22,9 @@ const Home = () => {
       < SectionImage />
 
       <div className="absolute w-full h-9 bg-blue-400 sm:hidden block"><p></p></div>
-      <div className="sm:-pt-12">
-      <h2 className="topCenter text-3xl font-extrabold sm:text-4xl mb-8 mt-12 text-blue-400">{translation(lang, 'FomIntroTitle')}</h2>
-      <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'FomIntroContent')}</p>
+      <div className="sm:-pt-12 mt-12">
+        <h2 className="topCenter text-3xl font-extrabold sm:text-4xl mb-8 mt-12 text-blue-400">{translation(lang, 'FomIntroTitle')}</h2>
+        <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'FomIntroContent')}</p>
       </div>
       <div className="button__herobanner my-10">
         <Link to="/contact"><button className="flex mt-20 mb-8 mx-auto justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">{translation(lang, 'home7')}</button></Link>
