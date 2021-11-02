@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style.css';
 
+import HttpsRedirect from 'react-https-redirect';
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import languageReducer from './Store/languageReducer';
@@ -27,11 +28,14 @@ const store = createStore(
   
 const AppWrapper = () => {
   return (
+    <HttpsRedirect>
       <IconContext.Provider value={{ color: "#0C1821", size: '3em', className: "global-Icon rounded-lg hover:shadow-2xl" }}>
         <Provider store={store}>
             <App/>
         </Provider>
       </IconContext.Provider>
+    </HttpsRedirect>
+
     )
   }
 
