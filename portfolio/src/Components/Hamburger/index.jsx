@@ -19,8 +19,8 @@ const Hamburger=()=> {
           <Link to="/"><FaHome className="hover:shadow-2xl mb-8"/></Link>
           <Link to="/resume"><HiDocumentText className="hover:shadow-2xl mb-8"/></Link>
           <Link to="/contact"><MdMail className="hover:shadow-2xl mb-8" alt="gmail logo"/></Link>
-          <a href="https://github.com/volpito" > <FaGithubSquare className="hover:shadow-2xl mb-8" alt="github logo"/> </a>
-          <a href="https://www.linkedin.com/in/maxime-rigot-53259169/" > <FaLinkedin className="hover:shadow-2xl" alt="linkedin logo" /> </a>
+          <a href="https://github.com/volpito" rel="noreferrer" target="_blank"> <FaGithubSquare className="hover:shadow-2xl mb-8" alt="github logo"/> </a>
+          <a href="https://www.linkedin.com/in/maxime-rigot-53259169/" rel="noreferrer" target="_blank"> <FaLinkedin className="hover:shadow-2xl" alt="linkedin logo" /> </a>
         </div>
         <div className="absolute bottom-0 right-9">
           < BtnLang className="z-2"/>
