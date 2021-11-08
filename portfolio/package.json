@@ -36,7 +36,7 @@
     "webpack-cli": "3.0.8"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "node server/server.js",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
