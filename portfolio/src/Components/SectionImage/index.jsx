@@ -20,7 +20,7 @@ export default function SectionAPI() {
       </h2>
     </div>
     < BackgoundVideo />
-    <div className="py-12 bg-gradient-to-b from-black via-black to-black"></div>
+    <div className="py-12 bg-gradient-to-b from-black to-gray-700"></div>
     <div className="bg-fixed h-96 bg-top" style={{backgroundImage: `url(${sky})`}}>
     </div>
     </>
