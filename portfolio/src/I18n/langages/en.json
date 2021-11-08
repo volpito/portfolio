@@ -4,7 +4,7 @@
   "titleHome": "Welcome to ",
   "titleHome1": "my website",
   "home1" : "If you came all the way here, I guess it's safe for me to assume that you know what I do.",
-  "home2" : "If so, I don't have to tell you that I have been a web developer since 2021, nor that I specialised in using ReactJS and Ruby on Rails. You may also know that I worked with Wordpress, Bootstrap, and other web tools. Obviously, I'm fluent in both HTML and CSS.",
+  "home2" : "If so, I don't have to tell you that I started coding in 2019 at 42'school, nor that I then specialised in using ReactJS and Ruby on Rails. You may also know that I worked with Wordpress, Bootstrap, and other web tools. Obviously, I'm fluent in both HTML and CSS.",
   "home3" : "No need for me to tell you all about it.",
   "home4" : "On the contrary, I will let you scroll through this portfolio, a playground of sorts that I will never cese to improve, both because I like it, and also because it gives you a good look on what I'm capable of doing with a keyboard.",
   "home5" : "Front was made using ReactJS, with some help from TailWind CSS, and the back was build with Ruby on Rails.",
@@ -36,6 +36,7 @@
   "CvTitleError": "Resume is not available on mobile. Please send an email or try again from your laptop.",
   "TitleIMG": "Or maybe some nice images...",
   "ContentIMG": "Feel the soothing appeal of scrolling through this section",
+  "TitleVID": "Also, mp4s are a thing.",
   "FomIntroTitle": "Do you have a project ?",
   "FomIntroContent": "I may have just the solution for you, or we can at least talk about it",
   "inputWeatherCity": "Add a city Name",
@@ -46,5 +47,7 @@
   "card2title": "Skate Boarder",
   "card2content": "I cruise more than I trick, for those who know what that means...",
   "card3title": "Master's degree Holder",
-  "card3content": "From EFAP's communication & marketing school, 2014"
+  "card3content": "From EFAP's communication & marketing school, 2014",
+  "card4title": "Game Master",
+  "card4content": "Ruler and creator of original games of Dungeons and Dragons, playing with 4"
 }

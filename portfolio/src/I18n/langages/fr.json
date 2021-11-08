@@ -4,7 +4,7 @@
   "titleHome": "Bienvenue sur",
   "titleHome1": "mon site",
   "home1" : "Si vous êtes arrivé jusqu'ici, c'est que vous avez déjà parcouru mon Linkedin, survolé mon profil sur Malt, cherché mon nom sur Google ou, plus simplement, que je vous ai donné ma carte.",
-  "home2" : "Inutile donc de vous préciser que je suis développeur web depuis 2021, essentiellement sur ReactJS et Ruby on Rails. Vous n'ignorez pas non plus que maîtrise les outils tels que Wordpress, Bootstap et autres. Et au cas où ce ne serait pas déjà évident : HTML et CSS n'ont pas de secrets pour moi. ",
+  "home2" : "Inutile donc de vous préciser que j'ai commencé à coder à 42 en 2019, sur le langage C, ni que je me suis depuis tourné vers le web avec ReactJS et Ruby on Rails. Vous n'ignorez pas non plus que maîtrise les outils tels que Wordpress, Bootstap et autres. Et au cas où ce ne serait pas déjà évident : HTML et CSS n'ont pas de secrets pour moi. ",
   "home3" : "Mais vous le saviez déjà, je n'en parlerai donc pas.",
   "home4" : "Au contraire, je vais vous laisser explorer mon Portfolio, qui est, aujourd'hui encore, un terrain de jeu qui me permet d'exprimer ma créativité et de vous montrer un échantillon de mes compétences.",
   "home5" : "Le front a été réalisé en ReactJS, avec l'aide de Tailwind CSS, et le back avec Ruby on Rails.",
@@ -36,6 +36,7 @@
   "CvTitleError": "Le document CV est indisponible sur mobile. Veuillez me contacter ou réessayer sur votre ordinateur.",
   "TitleIMG": "Ou prenez le temps de contempler de belles et grandes images...",
   "ContentIMG": "Ressentez du bout des doigts le plaisir de scroller en décrouvrant cette section",
+  "TitleVID": "Sans oublier les mp4 :",
   "FomIntroTitle": "Vous avez un projet web ?",
   "FomIntroContent": "J'ai probablement une solution pour vous, et serai ravi de vous en parler !",
   "inputWeatherCity": "Entrez un nom de ville",
@@ -46,5 +47,7 @@
   "card2title": "Skateboarder",
   "card2content": "Plus adepte du style 'cruiser' que surfeur de la rampe",
   "card3title": "Détenteur d'un Master",
-  "card3content": "Déscerné par l'EFAP, école de communication et marketing, en 2014"
+  "card3content": "Déscerné par l'EFAP, école de communication et marketing, en 2014",
+  "card4title": "Maître du Jeu",
+  "card4content": "Créateur, organisateur et animateur de parties de Donjon et Dragon à 4 joueurs"
 }

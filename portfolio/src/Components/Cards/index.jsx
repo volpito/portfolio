@@ -3,6 +3,7 @@ import portfolio from '../../Assets/Images/portfolio.png'
 import globe from '../../Assets/Images/globe.png'
 import skate from '../../Assets/Images/skate.png'
 import bartend from '../../Assets/Images/bartend.png'
+import dice from '../../Assets/Images/dice.png'
 import { useSelector } from 'react-redux'
 import {translation} from "../../I18n/i18n";
 
@@ -13,16 +14,22 @@ const lang = useSelector(state => state.languageReducer.language)
 
 const people = [
   {
+    name: `${translation(lang, 'card1title')}`,
+    role: `${translation(lang, 'card1content')}`,
+    imageUrl:
+      `${globe}`,
+  },
+  {
     name: `${translation(lang, 'cardtitle')}`,
     role: `${translation(lang, 'cardcontent')}`,
     imageUrl:
       `${bartend}`,
   },
   {
-    name: `${translation(lang, 'card1title')}`,
-    role: `${translation(lang, 'card1content')}`,
+    name: `${translation(lang, 'card4title')}`,
+    role: `${translation(lang, 'card4content')}`,
     imageUrl:
-      `${globe}`,
+      `${dice}`,
   },
   {
     name: `${translation(lang, 'card2title')}`,
@@ -46,7 +53,7 @@ const people = [
             <h2 className="text-6xl font-extrabold tracking-tight sm:text-8xl mb-12 sm:mb-24"><span className="text-blue-400">MPJ</span> RIGOT</h2>
           </div>
             <ul
-              className="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
+              className="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-5"
             >
             {people.map((person) => (
               <li key={person.name}>

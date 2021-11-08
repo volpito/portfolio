@@ -6,7 +6,6 @@ import SectionAPI from '../../Components/SectionAPI/index';
 import SectionImage from '../../Components/SectionImage/index';
 import ContactForm from '../../Components/ContactForm/index';
 import Cards from '../../Components/Cards';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   const lang = useSelector(state => state.languageReducer.language)
@@ -20,7 +19,6 @@ const Home = () => {
       < Cards />
       < SectionAPI />
       < SectionImage />
-
       <div className="absolute w-full h-9 bg-blue-400"><p></p></div>
       <div className="sm:-pt-12 pt-12 sm:block hidden">
         <h2 className="topCenter text-3xl font-extrabold sm:text-4xl mb-8 mt-12 text-blue-400">{translation(lang, 'FomIntroTitle')}</h2>
