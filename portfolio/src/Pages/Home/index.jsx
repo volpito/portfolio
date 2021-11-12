@@ -6,6 +6,7 @@ import SectionAPI from '../../Components/SectionAPI/index';
 import SectionImage from '../../Components/SectionImage/index';
 import ContactForm from '../../Components/ContactForm/index';
 import Cards from '../../Components/Cards';
+import neon from '../../Assets/Images/neon.gif';
 
 const Home = () => {
   const lang = useSelector(state => state.languageReducer.language)
@@ -25,6 +26,8 @@ const Home = () => {
         <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'FomIntroContent')}</p>
       </div> 
       <ContactForm/>
+      <div className="sm:w-full mx-auto text-center py-6 px-4 sm:px-6 lg:px-8 text-blue-400 bg-current!"> </div>
+      <div className="bg-fixed h-96 bg-bottom bg-cover" style={{backgroundImage: `url(${neon})`}}></div>
     </>
   )
 }

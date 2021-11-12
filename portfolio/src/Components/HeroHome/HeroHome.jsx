@@ -38,7 +38,7 @@ export default function HeroHome() {
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1 className=" my-12 sm:my-0">
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                  <span className="block sm:-mt-12">{translation(lang, 'titleHome')}</span>
+                  <span className="block sm:-mt-12 ">{translation(lang, 'titleHome')}</span>
                   <span className="block text-blue-400 sm:ml-52 sm:mb-10">{translation(lang, 'titleHome1')}</span>
                 </span>
               </h1>

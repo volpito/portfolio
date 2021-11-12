@@ -135,15 +135,6 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                                {/*
-
-                <ModalError 
-                modalBtn={"formSubmit"}
-                modalContent1={"errorModal1"}
-                className={"text-center"}
-                />
-                                */}
-
                 <button
                   type="submit"
                   onClick={handleSubmit}
