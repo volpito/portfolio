@@ -11,7 +11,7 @@ export default function SectionAPI() {
     <div className="bg-fixed h-96 bg-top py-96" style={{backgroundImage: `url(${sky2})`}}>
     </div>
     <div className="sm:w-full mx-auto text-center py-12 px-4 sm:px-6 lg:px-8 text-blue-400 bg-current!">
-      <h2 className="text-3xl font-extrabold sm:text-4xl">
+      <h2 className="text-3xl font-extrabold sm:text-4xl mb-8">
         <span className="block">      
           {translation(lang, 'TitleIMG')}
         </span>
