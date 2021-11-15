@@ -8,7 +8,7 @@ export default function SectionAPI() {
 
   return (
     <>
-    <div className="bg-fixed h-96 bg-top py-72" style={{backgroundImage: `url(${sky2})`}}>
+    <div className="bg-fixed h-96 bg-top py-80" style={{backgroundImage: `url(${sky2})`}}>
     </div>
     <div className="sm:w-full mx-auto text-center py-12 px-4 sm:px-6 lg:px-8 text-blue-400 bg-current!">
       <h2 className="text-3xl font-extrabold sm:text-4xl mb-8">
@@ -18,7 +18,7 @@ export default function SectionAPI() {
       </h2>
       <p className="topCenter mt-4 text-lg leading-6 text-gray-400">{translation(lang, 'ContentIMG')}</p>
     </div>
-    <div className="bg-fixed h-96 py-72 bg-top" style={{backgroundImage: `url(${sky})`}}>
+    <div className="bg-fixed h-96 py-80 bg-top" style={{backgroundImage: `url(${sky})`}}>
     </div>
     </>
   )
