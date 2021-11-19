@@ -70,7 +70,7 @@ export default function ModalAPI() {
               >
               {!resp && (
                 <>
-                <p>{translation(lang, 'modalError')}</p>
+                <p className="my-6 text-center text-gray-400">{translation(lang, 'modalError')}</p>
                 </>
               )}
               {resp && (
@@ -81,10 +81,10 @@ export default function ModalAPI() {
                   </div>
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <div className="mt-2">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-400">
                       {resp && (resp.title)}
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-400">
                       {resp && (resp.date)}
                     </p>
                     </div>
