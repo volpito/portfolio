@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useSelector } from 'react-redux';
 import { translation } from '../../I18n/i18n';
+import duck from '../../Assets/Images/duck-hat.gif'
 
 export default function ModalAPI(props) {
   const {lat, long} = props
@@ -70,12 +71,20 @@ export default function ModalAPI(props) {
               className="inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6"
               style={{backgroundColor :"#0C1821"}}
               >
-              {!resp && (
+              {!resp && lat &&(
                 <>
                 <p>{translation(lang, 'modalError')}</p>
                 </>
               )}
-              {resp &&(
+
+              {!lat &&(
+                <>
+                <p className="my-6 mx-24">{translation(lang, 'errorModal1')}</p>
+                <img className="sm:w-4/12 w-6/12 mx-auto mb-16" src={duck} alt="duck dancing with a hat on"/>
+                </>
+              )}
+
+              {resp && lat &&(
                 <div className="sm:flex-col sm:items-start sm:mb-16">
                   <div className="mx-auto flex items-center justify-center sm:mx-0 ">
                     <img src={`${resp &&(resp.current.condition.icon)}`} alt={`${resp.current.condition.text}`}/>

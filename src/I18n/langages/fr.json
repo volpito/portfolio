@@ -29,7 +29,7 @@
   "sendCity":"Envoyer",
   "sendCoord": "Envoyez vos coordonnées",
   "modalError": "Chargement... :/",
-  "errorModal1": "En cours de développement...",
+  "errorModal1": "Veuillez activer votre Géolocalisation avant d'utiliser cet outil",
   "CvTitle": "Curriculum Vitae",
   "CvTitleBig": "Mon CV, en bonne et due forme",
   "CvTitleSmall": "Toutes les questions que vous pourriez avoir sur mon parcours. Pour plus d'informations...",

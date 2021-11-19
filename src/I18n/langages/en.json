@@ -29,7 +29,7 @@
   "sendCity":"Send to API",
   "sendCoord": "Send coordonates",
   "modalError": "Loading... :/",
-  "errorModal1": "Work in progress...",
+  "errorModal1": "Please activate your geolocalisation to access this feature",
   "CvTitle": "Resume",
   "CvTitleBig": "My (french) resume",
   "CvTitleSmall": "Here's all the information you might be asking about my professional experience. For more info...",
