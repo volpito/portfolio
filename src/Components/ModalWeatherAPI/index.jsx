@@ -51,7 +51,7 @@ export default function ModalAPI(props) {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-            <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+            <Dialog.Overlay className="fixed inset-0 bg-gray-400 bg-opacity-75 transition-opacity" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
@@ -73,14 +73,14 @@ export default function ModalAPI(props) {
               >
               {!resp && lat &&(
                 <>
-                <p>{translation(lang, 'modalError')}</p>
+                <p className="my-6 text-center text-gray-400">{translation(lang, 'modalError')}</p>
                 </>
               )}
 
               {!lat &&(
                 <>
-                <p className="my-6 mx-24">{translation(lang, 'errorModal1')}</p>
-                <img className="sm:w-4/12 w-6/12 mx-auto mb-16" src={duck} alt="duck dancing with a hat on"/>
+                <p className="my-6 text-center text-gray-400">{translation(lang, 'errorModal1')}</p>
+                <img className="sm:w-4/12 w-6/12 mx-auto mb-16 rounded-2xl" src={duck} alt="duck dancing with a hat on"/>
                 </>
               )}
 
@@ -89,23 +89,21 @@ export default function ModalAPI(props) {
                   <div className="mx-auto flex items-center justify-center sm:mx-0 ">
                     <img src={`${resp &&(resp.current.condition.icon)}`} alt={`${resp.current.condition.text}`}/>
                   </div>
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <div className="mt-2">
-                    <p className="text-lg text-center font-bold text-gray-500">
+                  <div className="text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <p className="mb-6 text-lg text-center font-bold text-gray-400">
                       {resp &&(resp.location.name)}
                     </p>
                     <div className="grid grid-cols-2">
-                    <p className="text-sm text-gray-500 text-left">
+                    <p className="text-sm text-gray-400 text-left">
                       {resp &&(resp.current.condition.text)}
                     </p>
-                    <p className="text-sm text-gray-500 text-right">
+                    <p className="text-sm text-gray-400 text-right">
                       {resp &&(resp.location.localtime)}
                     </p>
                     </div>
-                    <p className="text-sm text-gray-500 text-left">
+                    <p className="text-sm text-gray-400 text-left">
                       {resp &&(resp.current.temp_c)}°C
                     </p>
-                    </div>
                   </div>
                 </div>)}
                 <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
