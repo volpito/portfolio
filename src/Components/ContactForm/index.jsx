@@ -48,10 +48,10 @@ const ContactForm = () => {
         <div className="bg-current! py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-extrabold tracking-tight text-blue-400 sm:text-3xl">{translation(lang, 'form1')}</h2>
-            <p className="mt-3 text-lg leading-6 text-gray-500">
+            <p className="mt-3 text-lg leading-6 text-gray-400">
             {translation(lang, 'form2')}
             </p>
-            <dl className="mt-8 text-base text-gray-500">
+            <dl className="mt-8 text-base text-gray-400">
               <div>
                 <dt className="sr-only">{translation(lang, 'form3')}</dt>
                 <dd>
