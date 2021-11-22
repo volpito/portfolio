@@ -2,7 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import {translation} from "../../I18n/i18n";
 import { Link } from 'react-router-dom';
-import ImageMe from '../../Components/3DCard/index';
+import ImageMe from '../../Assets/Images/me.jpeg'
+import MePNG from '../3DCard/index'
 
 export default function HeroHome() {
   const lang = useSelector(state => state.languageReducer.language)
@@ -78,8 +79,20 @@ export default function HeroHome() {
                 <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
-              <div className="relative sm:mx-auto -ml-16">
-                <ImageMe/>
+              <div className="relative sm:mx-auto -ml-16 xl:block hidden">
+                <MePNG/>
+              </div>
+              <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md xl:hidden">
+                <button
+                  type="button"
+                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+                >
+                  <img
+                    className="w-12/12"
+                    src={ImageMe}
+                    alt="Maxime, smiling on a chair"
+                  />
+                </button>
               </div>
             </div>
           </div>
