@@ -12,12 +12,11 @@ html{
   perspective: 1000px;
 
   .reflection-content{
-    height:80vh;
+    height:100vh;
     width:80vh;
-    background: url(../../Assets/Images/moi.png);
+    background: url(../../Assets/Images/moi4.png);
     background-size:cover;
-    background-position:center;
-    padding-bottom: 100px;
+    background-position:left bottom;
     transform:rotateX(0) rotateY(0);
     pointer-events:none;
     transition:100ms linear transform;
