@@ -1,6 +1,6 @@
 {
   "header1": "Hello world !",
-  "header2": "(Yes, i know how to center a div)",
+  "header2": "(Yes, I know how to center a div)",
   "titleHome": "Welcome to ",
   "titleHome1": "my website",
   "home1" : "If you came all the way here, I guess it's safe for me to assume that you know what I do.",
@@ -10,6 +10,7 @@
   "home5" : "Front was made using ReactJS, with some help from TailWind CSS, and the back was build with Ruby on Rails.",
   "home6" : "I hope you enjoy the tour !",
   "home7" : "Email-me here",
+  "home8" : "Learn more",
   "form1" : "Get in touch",
   "form2" : "Please add your details into the following form, and I'll make sure to get back to you with haste.",
   "formAdress1" : "7 place des Terreaux",

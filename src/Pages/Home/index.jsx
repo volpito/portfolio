@@ -7,6 +7,7 @@ import SectionImage from '../../Components/SectionImage/index';
 import ContactForm from '../../Components/ContactForm/index';
 import Cards from '../../Components/Cards';
 import neon from '../../Assets/Images/neon.gif';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const lang = useSelector(state => state.languageReducer.language)
@@ -18,6 +19,9 @@ const Home = () => {
       <p className="topCenter text-gray-400">{translation(lang, 'header2')}</p>
       < HeroHome />
       < Cards />
+      <div className="button__herobanner sm:mb-24 mb-16 mt-8">
+        <Link to="/resume"><button className="flex mx-auto justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-400 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">{translation(lang, 'home8')}</button></Link>
+      </div>
       < SectionAPI />
       < SectionImage />
       <div className="absolute w-full h-9 bg-blue-400"><p></p></div>
