@@ -29,7 +29,7 @@ export default function Resume() {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:place-items-center">
             <p/>
-            <img src={CV} alt="Maxime's resume" className="mt-12 rounded-2xl sm:mt-24 sm:w-8/12 shadow-xl"/>
+            <img src={CV} alt="My resume" className="mt-12 rounded-2xl sm:mt-24 sm:w-8/12 shadow-xl"/>
             </div>
           </div>
         </div>

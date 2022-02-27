@@ -90,7 +90,7 @@ export default function HeroHome() {
                   <img
                     className="w-12/12"
                     src={ImageMe}
-                    alt="Maxime, smiling on a chair"
+                    alt="Me, smiling on a chair"
                   />
                 </button>
               </div>

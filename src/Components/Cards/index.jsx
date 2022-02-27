@@ -63,7 +63,7 @@ const people = [
             {people.map((person) => (
               <li key={person.name}>
                 <div className="space-y-4">
-                  <img className={`rounded-3xl p-2 bg-gray-50 mx-auto h-20 w-20 lg:w-24 lg:h-24 ${person.classname}`} src={person.imageUrl} alt="" />
+                  <img className={`rounded-3xl p-2 bg-gray-50 mx-auto h-20 w-20 lg:w-24 lg:h-24 ${person.classname}`} src={person.imageUrl} alt="collection of pictograms to illustrate the content of this section" />
                   <div className="space-y-2">
                     <div className="text-xs font-medium lg:text-sm">
                       <h3 className="text-blue-400">{person.name}</h3>

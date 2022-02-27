@@ -9,7 +9,7 @@ const HeroBannerLandingPage = () => {
     return(
         <>
             <div className="container">
-                <div className="column__img"><img src={myPic} className="pictureHeroBanner" alt="myPic" /></div>
+                <div className="column__img"><img src={myPic} className="pictureHeroBanner" alt="Me wearing a blue shirt (it wiggles when your mouse hovers it)" /></div>
                 <div className="column__text">
                     <h1 className="title__herobanner">{translation(lang, 'title')}</h1>
                     <p className="intro__herobanner">
