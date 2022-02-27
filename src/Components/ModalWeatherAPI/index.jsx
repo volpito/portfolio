@@ -80,7 +80,7 @@ export default function ModalAPI(props) {
               {!lat &&(
                 <>
                 <p className="my-6 text-center text-gray-400">{translation(lang, 'errorModal1')}</p>
-                <img className="sm:w-4/12 w-6/12 mx-auto mb-16 rounded-2xl" src={duck} alt="duck dancing with a hat on"/>
+                <img className="sm:w-4/12 w-6/12 mx-auto mb-16 rounded-2xl" src={duck} alt="Cute duck dancing with a hat on"/>
                 </>
               )}
 
