@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "engines": {
-    "node": "14.x",
+    "node": "19.x",
     "yarn": "1.x"
   },
   "private": true,
@@ -37,7 +37,7 @@
     "webpack-cli": "3.0.8"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
